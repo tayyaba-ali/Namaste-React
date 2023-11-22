@@ -1,0 +1,48 @@
+What is Emmet?
+
+Emmet is a web development tool that makes effective and speed up HTML and CSS coding.It is a shortand language for writing HTML and CSS more efficiently,allowing developers to write code faster and with fewer keystrokes.
+
+Emmet provides abbreviations and shortcuts for common HTML and CSS patterns, and it allows you to expand these abbreviations into complete HTML or CSS code with a single keystroke. It's often used in code editors and integrated development environments (IDEs) that support Emmet.
+
+What is CDN:
+
+CDN(Content delivery network):
+
+Let's suppose we have copies of our favaorite books in different libraries globally. When we wanna read our book we can access that book by just going to our nearby library instead of going to the origin library same like on internet when we request something we can access them by nearby servers having copies of that stuff using CDN without going to the main server this will save our time and make performance faster enhance the reliability and availability of web content..
+
+*In React CDNs  nothing just javascript code which facebook engineers have written for us.
+
+
+What is Cross Origin:
+
+Let's understand with an example suppose there is a library A and a library B and there is a rule that the person in library A can only read books in that library not allowed to read books in library B vice versa. Same like this on internet we can't access data from any other website we can only access from ours. CORS (Cross-Origin Resource Sharing) is a security feature implemented in web browsers to allow or restrict web applications running at one origin to request resources from a different origin .
+
+*Injected only react cdns is the smallest react code like in js empty file is the smallest code
+
+*When injected react we will have react global variables and react will have its own apis like createElemet createRoots etc .
+
+*React element at the end of the day is an object
+
+*In react app we have only 1 root and 1 render method
+
+can we have more than 1 roots?
+
+*NO we can't have although we can make root and start our react in our existing projects too
+
+Differences betweeen async and defer
+
+First of all both are attributes used in script tag
+
+They can change the order of our files execution
+
+*async
+
+from the name we can infer that something going asynchronously for example you have to do 3 tasks boil milk, toast bread and spread jam on bread
+
+You started working like first you put milk on stove and leave it to boil while it is boiling you are doing some other stuff when it is boiled you are gonna do other stuff
+
+Same in order of files when we link script tag in our html code using async attribute The html started parsing at the same time the script start's loading in the background when it's complete it's starting executed without waiting for further parsing of HTML.
+
+*defer
+
+The thing which is same in defer is that it also start's loading in the backgroung but it wait's until the whole html get parsed after that it will start executing
