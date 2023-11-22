@@ -1,10 +1,25 @@
-What is Emmet?
+*What is Emmet?
 
 Emmet is a web development tool that makes effective and speed up HTML and CSS coding.It is a shortand language for writing HTML and CSS more efficiently,allowing developers to write code faster and with fewer keystrokes.
 
 Emmet provides abbreviations and shortcuts for common HTML and CSS patterns, and it allows you to expand these abbreviations into complete HTML or CSS code with a single keystroke. It's often used in code editors and integrated development environments (IDEs) that support Emmet.
 
-What is CDN:
+*Differences b/w library and framework
+
+Library:
+
+A collection of pre-written code.
+Developers have more control over the application structure.
+No strict rules on how to use it.
+Examples: jQuery, Lodash.
+Framework:
+
+A comprehensive set of tools and conventions.
+Developers build within the framework's structure.
+Enforces a specific architecture and set of rules.
+Examples: Angular, React, Django.
+
+*What is CDN:
 
 CDN(Content delivery network):
 
@@ -12,8 +27,17 @@ Let's suppose we have copies of our favaorite books in different libraries globa
 
 *In React CDNs  nothing just javascript code which facebook engineers have written for us.
 
+*Why react is called React?
 
-What is Cross Origin:
+ "React" captures the essence of the library's design principles, emphasizing its reactivity to state changes and its ability to efficiently update the user interface. The term reflects the framework's focus on providing a declarative, component-based, and responsive approach to building modern web applications.
+
+
+
+*Differences between React and ReactDOM
+
+ React is the core library that provides the fundamental tools and concepts for building user interfaces in React applications. It is platform-agnostic and can be used across different environments. On the other hand, ReactDOM is a package that specifically deals with rendering React components to the DOM in web applications. While React handles the core logic and component definition, ReactDOM is responsible for the interaction between React and the web-specific features of the DOM.
+
+*What is Cross Origin:
 
 Let's understand with an example suppose there is a library A and a library B and there is a rule that the person in library A can only read books in that library not allowed to read books in library B vice versa. Same like this on internet we can't access data from any other website we can only access from ours. CORS (Cross-Origin Resource Sharing) is a security feature implemented in web browsers to allow or restrict web applications running at one origin to request resources from a different origin .
 
@@ -29,7 +53,13 @@ can we have more than 1 roots?
 
 *NO we can't have although we can make root and start our react in our existing projects too
 
-Differences betweeen async and defer
+*Difference between react development and production files via using cdn 
+
+The difference is that in production files are minified light weight as compared to development files because we have some extra code in dev files developers use code for debugging, warning messages, and development tools
+
+
+
+*Differences betweeen async and defer
 
 First of all both are attributes used in script tag
 
