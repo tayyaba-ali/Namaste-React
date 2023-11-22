@@ -20,7 +20,7 @@ The difference is that the pacakages in   devDependencies can be used while doin
 
 *what is tree shaking
 
-Our react app is dependent on parcel .parcel is also dependent on other packages vice versa that will create tree shaking
+It removes extra code when we install packages It won't get all the code will only access the code we want
 
 *What is Hot Module Replacemnet
 
