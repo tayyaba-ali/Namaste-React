@@ -1,0 +1,67 @@
+*What is npm
+
+Npm doesn't stand for node package manager you won't find on official documentation it will generate random abbreviations which people pull on their repository but it works like managing packages so people always say it node package manager.
+
+*What is parcel/web pack ? why do we need it?
+
+Parcel/ web pack is bundler. React is just small piece of code so it is not enough sufficient we need some bundler to minify , bundle, clean code, HRM , file watcher all that super powers so make our web perfoming fast and effective
+
+*What is parcel cache
+
+As parcel is doing HRM using file waching algorithm so it needs space to do that that's why parcel-cache is database for parcel
+
+*What is npx
+
+node pacakage execute doesn't install packages globally on machine .It just use the packages without actually installing in dev machine
+
+*Differences between devDependencies and dependencies
+
+The difference is that the pacakages in   devDependencies can be used while doing development and packages in dependencies can be used in production
+
+*what is tree shaking
+
+Our react app is dependent on parcel .parcel is also dependent on other packages vice versa that will create tree shaking
+
+*What is Hot Module Replacemnet
+
+HRM is live reloading which parcel do it by using its packages it get automatically load and updated what we changed in our files
+
+*List down your favorite 5 superpowers  of Parcel and descrive any 3 of them
+
+Hot Module Replacemnet :
+
+just instantly refereshes the page and make us see the updated data on website
+
+Bundling :
+
+It bundles our whole web app in just smaller chunks of files less storage 
+
+Image Optimization :
+
+It optimizes the images no need to do that before
+
+*what is gitignore?what should we not to add to gitignore?
+
+gitignore ignore the files you add in it from pushing on github we should  add those things to gitignore which can be recreated over server like node modules and parcel cache and don't ever add package json and pacakage-lock .json in gitgnore
+
+*Difference between package.json and package-lock.json
+
+package.json describes the project and its dependencies, package-lock.json provides a precise snapshot of the dependency tree with exact versions. Both files work together to manage and reproduce a consistent development and production environment.
+
+*Why we should not modify package-lock.json
+
+As package json is the list of all the dependencies our project hold and  package-lock.json is snapshot of that dependencies means it will list their further dependencies and if we change something in package-lock.json it will conflict with package.json versions that will complications
+
+*What is node_modules ? Is it a good  idea to push that on git?
+
+Node modules contain the code of all the packages we install it is the heaviest we shouldn't push it on git they can later be created by running npm init command on server
+
+*What is dist folder
+
+Dist folder is production ready and minified version of our original project
+
+*What is browserList?
+
+Browserlist is also a package that parcel holds it makes code run on older versions of browser In package-lock.json we can mention the specific versions of browser o support on that too
+
+*
