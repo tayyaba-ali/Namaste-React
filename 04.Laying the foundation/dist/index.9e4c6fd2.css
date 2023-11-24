@@ -1,0 +1,27 @@
+.container {
+  border: 1px solid #000;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 30px;
+  display: flex;
+}
+
+.searchBar {
+  width: 20%;
+}
+
+.searchBar input {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+}
+
+.flex-item {
+  flex: 1;
+}
+
+.middle {
+  flex: 2;
+}
+
+/*# sourceMappingURL=index.9e4c6fd2.css.map */

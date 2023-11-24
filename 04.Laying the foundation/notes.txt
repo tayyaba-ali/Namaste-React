@@ -1,0 +1,25 @@
+*What is JSX
+
+JSX is javascript xmlit means it is html like structure but not html and the end of the day it is converted into react.createElement then html then show in the DOM babale is converting JSX into React.createElement
+
+*Superpowers of JSX
+
+Without using JSX it is very tideous and painful to write complex HTML by using React.createELement when JSX came in REact it made developement experience easy and now we can easyily create html like structure in JS then at the end of the day will convert into React.createElement
+
+*Role of attribute in script tag? What options can I use there?
+
+ Role of type attribute in script tag? What options can I use there?
+A: The type attribute specifies the type of the script. The type attribute identifies the content between the <script> and </script> tags. It has a Default value which is “text/javascript”.
+
+type attribute can be of the following types:
+text/javascript : It is the basic standard of writing javascript code inside the <script> tag.
+Syntax
+<script type="text/javascript"></script>
+text/ecmascript : this value indicates that the script is following the EcmaScript standards.
+module: This value tells the browser that the script is a module that can import or export other files or modules inside it.
+text/babel : This value indicates that the script is a babel type and required bable to transpile it.
+text/typescript: As the name suggest the script is written in TypeScript.
+
+*{TitleComponent} vs {<TitleComponent />} vs {<TitleComponent></TitleComponent>} in JS
+
+First of all {} are used in JSX to wite any piece of Javascript if we want to call varible we can simply write the name of that variable in {} and if we want to call functional component we can call by the angle syntax and the last one is also same for calling functional component
