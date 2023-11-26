@@ -1,0 +1,38 @@
+.container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	border: 1px solid black;
+	padding: 0 30px;
+}
+
+.navbar{
+	list-style: none;
+	display: flex;
+
+}
+.navbar li{
+	padding: 1rem;
+}
+.bodyDiv{
+	padding: 1rem;
+	margin: 1rem;
+	border: 1px solid black;
+}
+.ResDiv{
+	display: flex;
+	flex-wrap: wrap;
+	gap: 20px;
+}
+.card{
+	width: 20%;
+	border: 1px solid red;
+	padding: 1rem;
+	border-radius: 20px;
+}
+.card img{
+	width: 100%;
+}
+.ResDiv{
+	padding: 1rem;
+}

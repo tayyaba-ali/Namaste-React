@@ -1,8 +1,7 @@
-
-import React from "react";
-import ReactDOM from "react-dom/client";
-import "./index.css"
-import logo from "./Good-food-logo-design-on-transparent-background-PNG.png"
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import './index.css';
+import logo from './Good-food-logo-design-on-transparent-background-PNG.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faUser } from '@fortawesome/free-solid-svg-icons';
 // const heading = React.createElement('h1', null, 'Hello world');
@@ -45,7 +44,6 @@ import { faUser } from '@fortawesome/free-solid-svg-icons';
 //   <h3 key = "h3">Heading 1</h3>
 // </div>)
 
-
 // Functional Component
 
 // child component
@@ -67,16 +65,15 @@ import { faUser } from '@fortawesome/free-solid-svg-icons';
 // 	</div>
 // );
 
-
 // Header Component
 
 const Header = () => (
-	<div className="container">
-		<img  className="flex-item" width={50} height={150} src={logo} alt='' />
-		<div  className="searchBar  middle">
+	<div className='container'>
+		<img className='flex-item' width={50} height={150} src={logo} alt='' />
+		<div className='searchBar  middle'>
 			<input type='text' placeholder='Search' />
 		</div>
-		<FontAwesomeIcon className="flex-item" style={{fontSize:"2rem"}} icon={faUser} />
+		<FontAwesomeIcon className='flex-item' style={{ fontSize: '2rem' }} icon={faUser} />
 	</div>
 );
 
