@@ -1,10 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
 import logo from './Good-food-logo-design-on-transparent-background-PNG.png';
-import biryani from './biryani.jpeg';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBirthdayCake, faUser } from '@fortawesome/free-solid-svg-icons';
+import './index.css';
 
 // Title component containing logo
 
@@ -1826,10 +1823,11 @@ const restaurantData = [
 		subtype: 'basic',
 	},
 ];
-const RestaurantCard = (props) => {
-  console.log(props);
-	const { cloudinaryImageId, name, cuisines } = props.restaurant.data;
-	// const { name, cloudinaryImageId, cuisines, avgRating } = data;
+
+// { restaurant:{data:{name,cloudinaryImageId,cuisines}} }
+
+
+const RestaurantCard = ({  cloudinaryImageId, lastMileDistance, name, cuisines } ) => {
 	return (
 		<div className='card'>
 			<img
@@ -1839,7 +1837,7 @@ const RestaurantCard = (props) => {
 
 			<h2>{name}</h2>
 			<h3>{cuisines.join(' ,')}</h3>
-			<h4>{} stars</h4>
+			<h4>{lastMileDistance} stars</h4>
 		</div>
 	);
 };
@@ -1847,14 +1845,15 @@ const Body = () => (
 	<div className='bodyDiv'>
 		<SearchBar />
 		<div className='ResDiv'>
-			<RestaurantCard restaurant={restaurantData[0]} />
-			<RestaurantCard restaurant={restaurantData[1]} />
-			<RestaurantCard restaurant={restaurantData[2]} />
-			<RestaurantCard restaurant={restaurantData[3]} />
+      { restaurantData.map((restaurant, i) => (<RestaurantCard key={restaurant.data.id} { ...restaurant.data } />))}
 		</div>
 	</div>
 );
-const Footer = () => <h1>Footer</h1>;
+const Footer = () => (
+  <div className='footer'>
+    <p>copyright</p>
+  </div>
+);
 
 const AppLayout = () => (
 	<>
