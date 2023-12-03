@@ -3,25 +3,32 @@ import { restaurantData } from '../Config';
 import RestaurantCard from './RestaurantCard';
 
 const SearchBar = () => {
-	let myname = 'Tayyaba';
-	// const [myName,setName] = useState("Tayyaba")
-	const changeNameHandler = () => {
-		myname = 'Umra';
-		console.log(myname);
-		console.log('Hello world!');
-	};
-
+	// let student = "Tayyaba"
+	const [ searchText, setSearchText ] = useState("")
+	const [toggle,setToggle]= useState("true")
+	const clickHandler = () => {
+		if (toggle === 'false') {
+			setToggle('true');
+		} else {
+			setToggle('false');
+		}
+	}
 	return (
 		<div className='searchBar '>
-			<input type='text' placeholder='Search' />
-
-			<h1>{myname}</h1>
-			<button onClick={changeNameHandler}>Change Name</button>
+			<input type='text' value={ searchText } placeholder='Search' onChange={ (e) => {
+				setSearchText(e.target.value);
+			}} />
+			<button >Search</button>
+			<h1>{ toggle }</h1>
+			<button onClick={ clickHandler
+			}>change toggle</button>
 		</div>
 	);
 };
 
 const Body = () => {
+	// const [ restaurantData, setRestaurantData ] = useState(restaurantData)
+	
 	return (
 		<div className='bodyDiv'>
 			<SearchBar />

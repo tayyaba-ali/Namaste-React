@@ -27501,53 +27501,70 @@ var _reactDefault = parcelHelpers.interopDefault(_react);
 var _config = require("../Config");
 var _restaurantCard = require("./RestaurantCard");
 var _restaurantCardDefault = parcelHelpers.interopDefault(_restaurantCard);
+var _s = $RefreshSig$();
 const SearchBar = ()=>{
-    let myname = "Tayyaba";
-    // const [myName,setName] = useState("Tayyaba")
-    const changeNameHandler = ()=>{
-        myname = "Umra";
+    _s();
+    // let student = "Tayyaba"
+    const [searchText, setSearchText] = (0, _react.useState)("");
+    const [toggle, setToggle] = (0, _react.useState)("true");
+    const clickHandler = ()=>{
+        if (toggle === "false") setToggle("true");
+        else setToggle("false");
     };
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         className: "searchBar ",
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
                 type: "text",
-                placeholder: "Search"
+                value: searchText,
+                placeholder: "Search",
+                onChange: (e)=>{
+                    setSearchText(e.target.value);
+                }
             }, void 0, false, {
                 fileName: "src/components/Body.js",
-                lineNumber: 11,
-                columnNumber: 4
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-                children: myname
-            }, void 0, false, {
-                fileName: "src/components/Body.js",
-                lineNumber: 13,
+                lineNumber: 16,
                 columnNumber: 4
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
-                onClick: changeNameHandler,
-                children: "Change Name"
+                children: "Search"
             }, void 0, false, {
                 fileName: "src/components/Body.js",
-                lineNumber: 14,
+                lineNumber: 19,
+                columnNumber: 4
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                children: toggle
+            }, void 0, false, {
+                fileName: "src/components/Body.js",
+                lineNumber: 20,
+                columnNumber: 4
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                onClick: clickHandler,
+                children: "change toggle"
+            }, void 0, false, {
+                fileName: "src/components/Body.js",
+                lineNumber: 21,
                 columnNumber: 4
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/components/Body.js",
-        lineNumber: 10,
+        lineNumber: 15,
         columnNumber: 10
     }, undefined);
 };
+_s(SearchBar, "Gd6UX9oJ72spnmxiPxLB3xscKwg=");
 _c = SearchBar;
 const Body = ()=>{
+    // const [ restaurantData, setRestaurantData ] = useState(restaurantData)
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         className: "bodyDiv",
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(SearchBar, {}, void 0, false, {
                 fileName: "src/components/Body.js",
-                lineNumber: 19,
+                lineNumber: 28,
                 columnNumber: 4
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -27556,18 +27573,18 @@ const Body = ()=>{
                         ...restaurant.data
                     }, restaurant.data.id, false, {
                         fileName: "src/components/Body.js",
-                        lineNumber: 21,
+                        lineNumber: 30,
                         columnNumber: 44
                     }, undefined))
             }, void 0, false, {
                 fileName: "src/components/Body.js",
-                lineNumber: 20,
+                lineNumber: 29,
                 columnNumber: 4
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/components/Body.js",
-        lineNumber: 18,
+        lineNumber: 27,
         columnNumber: 10
     }, undefined);
 };
