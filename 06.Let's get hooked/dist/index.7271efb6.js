@@ -27501,16 +27501,16 @@ var _reactDefault = parcelHelpers.interopDefault(_react);
 var _config = require("../Config");
 var _restaurantCard = require("./RestaurantCard");
 var _restaurantCardDefault = parcelHelpers.interopDefault(_restaurantCard);
-var _s = $RefreshSig$();
-const SearchBar = ()=>{
+var _s = $RefreshSig$(), _s1 = $RefreshSig$();
+const filterData = (userValue, searchingData)=>{
+    const filteredData = searchingData.filter((restaurant)=>{
+        return restaurant.data.name.includes(userValue);
+    });
+    return filteredData;
+};
+const SearchBar = ({ restaurants, UIsetter })=>{
     _s();
-    // let student = "Tayyaba"
     const [searchText, setSearchText] = (0, _react.useState)("");
-    const [toggle, setToggle] = (0, _react.useState)("true");
-    const clickHandler = ()=>{
-        if (toggle === "false") setToggle("true");
-        else setToggle("false");
-    };
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         className: "searchBar ",
         children: [
@@ -27527,25 +27527,14 @@ const SearchBar = ()=>{
                 columnNumber: 4
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                onClick: ()=>{
+                    const finalData = filterData(searchText, restaurants);
+                    UIsetter(finalData);
+                },
                 children: "Search"
             }, void 0, false, {
                 fileName: "src/components/Body.js",
                 lineNumber: 19,
-                columnNumber: 4
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-                children: toggle
-            }, void 0, false, {
-                fileName: "src/components/Body.js",
-                lineNumber: 20,
-                columnNumber: 4
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
-                onClick: clickHandler,
-                children: "change toggle"
-            }, void 0, false, {
-                fileName: "src/components/Body.js",
-                lineNumber: 21,
                 columnNumber: 4
             }, undefined)
         ]
@@ -27555,39 +27544,44 @@ const SearchBar = ()=>{
         columnNumber: 10
     }, undefined);
 };
-_s(SearchBar, "Gd6UX9oJ72spnmxiPxLB3xscKwg=");
+_s(SearchBar, "lpZkT7pWeo+MC0liMHDzSFPwEJc=");
 _c = SearchBar;
 const Body = ()=>{
-    // const [ restaurantData, setRestaurantData ] = useState(restaurantData)
+    _s1();
+    const [restaurants, setRestaurants] = (0, _react.useState)((0, _config.restaurantData));
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         className: "bodyDiv",
         children: [
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(SearchBar, {}, void 0, false, {
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(SearchBar, {
+                restaurants: restaurants,
+                UIsetter: setRestaurants
+            }, void 0, false, {
                 fileName: "src/components/Body.js",
-                lineNumber: 28,
+                lineNumber: 30,
                 columnNumber: 4
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                 className: "ResDiv",
-                children: (0, _config.restaurantData).map((restaurant, i)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _restaurantCardDefault.default), {
+                children: restaurants.map((restaurant, i)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _restaurantCardDefault.default), {
                         ...restaurant.data
                     }, restaurant.data.id, false, {
                         fileName: "src/components/Body.js",
-                        lineNumber: 30,
-                        columnNumber: 44
+                        lineNumber: 32,
+                        columnNumber: 41
                     }, undefined))
             }, void 0, false, {
                 fileName: "src/components/Body.js",
-                lineNumber: 29,
+                lineNumber: 31,
                 columnNumber: 4
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/components/Body.js",
-        lineNumber: 27,
+        lineNumber: 29,
         columnNumber: 10
     }, undefined);
 };
+_s1(Body, "6YzJbEgX4ba7gIL4QPYIcn/Mw34=");
 _c1 = Body;
 exports.default = Body;
 var _c, _c1;
