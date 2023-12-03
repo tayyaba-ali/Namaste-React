@@ -1,0 +1,74 @@
+*Is JSX is mnadatory for react
+
+NO JSX is not mandatory we can build react elements by using React.createElement but but it will be very complex and tideous work so here JSX came into the picture it ehanced developer experinece by giving syntathic sugar similar to html but not html and the end of the day JSX converts into react.createElement
+
+*Is ES6 is mandaory 
+
+NO as JSx ES6 is not also mandatory we can write vanilla js but using ES6 we have to write less code and will be compiled into simple js whom browsers understand by babel compiler it's also a package
+
+*{TitleComponent> vs <TitleComponent /> vs <TitleComponent></TitleComponent>} in JSX
+
+The curly braces here to write any piece of js jo it would be a variable getting value dynamically ,
+the second one will be a functional componanet we call that functions like this
+the third and second are the same way to calling functional components it is also written as if it would have children 
+
+*How can I write comments in JSX
+
+first open curly brackets then you can use sinlge line or multi line comments
+
+*What is Virtual DOM
+
+
+Yes, your summary is accurate! Let's break it down a bit:
+
+Virtual DOM as a Copy:
+
+The Virtual DOM is indeed a lightweight, in-memory representation of the actual DOM. It serves as a copy or a snapshot of the current state of the UI.
+Changes and Diffing Algorithm:
+
+When changes occur in the application, a new Virtual DOM is created to represent the updated state.
+The diffing algorithm (also known as reconciliation) compares the new Virtual DOM with the previous one to identify the specific changes or differences.
+Efficient Updates:
+
+Once the differences are identified, only the necessary changes are made to the real DOM.
+This targeted approach to updating the DOM is more efficient than re-rendering the entire UI, especially in large and complex applications.
+Reconciliation Process:
+
+The process of comparing and updating the Virtual DOM and then applying the identified changes to the real DOM is known as reconciliation.
+React, for example, uses a diffing algorithm to perform this reconciliation process efficiently.
+
+*Why do we need keys in React?When do we need keys in React?
+
+When react find same type of elements for example ifr we have lis containaing 1 2  3 4 and then we create a li containing 5 the old virtual dom will check from the top so it will easy for it to add that li containig 5 in the last that will work well but if we have the updated li in the start like containig 8 then old one will build all lists from start that can make it perform slow that's why we provide keys unique values to let react understand that whether is element present or not if not then only add not create that makes it faster and decrease confusion
+
+
+*What is REconciliation
+
+
+Reconciliation in React is the process of efficiently updating the user interface to reflect changes in the application's state by comparing and updating a virtual representation of the DOM.
+
+
+
+*What is React fibre?
+
+React Fiber is the internal reimplementation of React's core algorithm, designed to improve performance, enable incremental rendering, and enhance support for animations. It enhances React's ability to handle complex user interfaces and lays the foundation for features like Concurrent Mode.
+
+*Can we use indexes as keys in react
+
+yes we can use but it's not recommend try to use unique keys if you don't have nothing unique then go for indexes
+
+
+*WHat is props in React? Ways to
+
+props are like arguments sending to functions means our components you can send it by descrtucting by using spread operation and ways you know already in javascript
+
+
+*What is Config Driven UI?
+
+Imagine you're building a website, and you want to decide how things look and behave. In a typical scenario, you might directly write code to specify colors, sizes, and where things should go on the screen.
+
+Now, with a config-driven UI, it's like having a set of instructions (a configuration) that says things like, "Make the background blue, put this button on the right, and make it larger." Instead of changing code, you just adjust these instructions.
+
+It's like customizing your game character in a video game. You don't change the game's code; you tweak settings like the character's color or outfit. Similarly, a config-driven UI lets you customize your website or app by adjusting settings without diving into the code.
+
+So, config-driven UI is like having a handy set of rules (configurations) to easily change how your website looks and works without messing with the actual code. It's a bit like having a remote control for your website's appearance!
