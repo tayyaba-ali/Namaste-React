@@ -27186,13 +27186,18 @@ try {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
 var _title = require("./Title");
-const Header = ()=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+// let welcome = "Welcome"
+const Header = ()=>{
+    // const [ welcome, setWelcome ] = useState("welcome")
+    // console.log("render")
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         className: "container",
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _title.Title), {}, void 0, false, {
                 fileName: "src/components/Header.js",
-                lineNumber: 3,
+                lineNumber: 10,
                 columnNumber: 3
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -27203,40 +27208,41 @@ const Header = ()=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                             children: "Home"
                         }, void 0, false, {
                             fileName: "src/components/Header.js",
-                            lineNumber: 7,
+                            lineNumber: 18,
                             columnNumber: 5
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
                             children: "ABout"
                         }, void 0, false, {
                             fileName: "src/components/Header.js",
-                            lineNumber: 8,
+                            lineNumber: 19,
                             columnNumber: 5
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
                             children: "Cart"
                         }, void 0, false, {
                             fileName: "src/components/Header.js",
-                            lineNumber: 9,
+                            lineNumber: 20,
                             columnNumber: 5
                         }, undefined)
                     ]
                 }, void 0, true, {
                     fileName: "src/components/Header.js",
-                    lineNumber: 6,
+                    lineNumber: 17,
                     columnNumber: 4
                 }, undefined)
             }, void 0, false, {
                 fileName: "src/components/Header.js",
-                lineNumber: 5,
+                lineNumber: 16,
                 columnNumber: 3
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/components/Header.js",
-        lineNumber: 2,
-        columnNumber: 22
+        lineNumber: 9,
+        columnNumber: 10
     }, undefined);
+};
 _c = Header;
 exports.default = Header;
 var _c;
@@ -27247,7 +27253,7 @@ $RefreshReg$(_c, "Header");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","./Title":"6wotK","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"6wotK":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","./Title":"6wotK","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","react":"21dqq"}],"6wotK":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$6418 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;

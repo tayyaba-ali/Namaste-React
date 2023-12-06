@@ -11,7 +11,8 @@ const filterData = (userValue, searchingData) => {
 
 const SearchBar = ({ restaurants, UIsetter }) => {
 	console.log(restaurants, UIsetter);
-	const [searchText, setSearchText] = useState('');
+	const [ searchText, setSearchText ] = useState('');
+	console.log("render");
 
 	return (
 		<div className='searchBar '>
